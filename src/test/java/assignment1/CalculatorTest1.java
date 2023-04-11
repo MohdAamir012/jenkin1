@@ -13,24 +13,24 @@ public class CalculatorTest1 {
 	@Test
 	public void addingTest()
 	{
-		int ans=obj.add(5, 10);
+		int ans=obj.switchFunction(1,5, 10);
 		Assert.assertEquals(ans, 15);
 	}
 	
 	@Test
 	public void subtractTesting() {
-		int ans=obj.sub(10,5);
+		int ans=obj.switchFunction(2,10,5);
 		Assert.assertEquals(ans, 5);
 	}
 	
 	@Test 
 	public void multiplingFunTesting() {
-		int ans=obj.multiply(10,5);
+		int ans=obj.switchFunction(3,10,5);
 		Assert.assertEquals(ans, 50);
 	}
 	@Test
 	public void divisionTesting() {
-		int ans=obj.dividing(10,5);
+		int ans=obj.switchFunction(4,10,5);
 		Assert.assertEquals(ans, 2);
 	}
 }
